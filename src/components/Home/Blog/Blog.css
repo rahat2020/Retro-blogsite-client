@@ -1,0 +1,63 @@
+.card-title{
+    font-size: 14px;
+}
+.date{
+    color: gray
+}
+.card{
+    border: none;
+}
+.card-img{
+    height:200px;
+    transition: transform 0.5s;
+
+}
+.card-img:hover{
+    transform: scale(1.1);
+}
+.card-description{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.877);
+    font-weight: bolder;
+    margin:6px px 15px px;
+}
+.card-text{
+    font-size: 13px;
+    color: gray;
+}
+
+.author-img{
+    width:60px;
+    height: 56px;
+    border-radius:30px;
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+}
+.author-name{
+    margin: 0px 10px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.918);
+}
+.author-passion{
+    color: gray !important;
+    font-size: 14px;
+}
+
+.btn-readmore{
+    border: none;
+    background: rgba(0, 0, 0, 0.863);
+    color: white;
+    padding:5px 15px 5px 15px;
+    margin-top: 20px;
+    align-items: center;
+    margin-left: 94px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+.btn-readmore:hover{
+    background: rgb(109, 106, 106);
+    font-weight: 600;
+}
