@@ -14,7 +14,7 @@ const HeaderMain = () => {
                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner mt-5">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-inner">
                             <div class="carousel-item-active">

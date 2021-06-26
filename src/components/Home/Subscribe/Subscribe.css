@@ -1,0 +1,28 @@
+.subscribe-title{
+text-decoration: underline;
+text-decoration-color: rgba(187, 187, 187, 0.863);
+text-decoration-style: wavy;
+}
+.container{
+    margin: 40px;
+}
+.input-text{
+    width:70%;
+    padding: 10px;
+}
+.btn-subscribe{
+    border: none; 
+    border-radius: 15px;
+    background: black;
+    padding:5px 15px 5px 15px;
+    color:white;
+    width: 20%;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+.btn-subscribe:hover{
+    font-weight: bold;
+    color: black;
+    background: aqua;
+}

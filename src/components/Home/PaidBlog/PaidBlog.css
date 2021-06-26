@@ -1,0 +1,52 @@
+.section-container{
+    margin: 40px;
+    padding: 20px;
+}
+.paid-container{
+    border-left: 1px dashed gray;
+    border-right: 1px dashed gray;
+}
+.text-start{
+    background: #00e6cb;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 5px;
+}
+.paid-title{
+    display: flex;
+    /* color: #141c3a; */
+
+}
+.paid-img{
+    width: 100px;
+    height: 110px;
+    border-radius: 5px;
+    margin-left: 108px;
+}
+.paid-head{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.89);
+    margin-top: -19px;
+    margin-bottom: 20px;
+}
+.paid-description{
+    font-size: 13px;
+}
+.tags{
+    align-items: center;
+    font-size: 13px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.paid-btn{
+    border-radius:5px;
+    border: none;
+    padding:5px 15px 5px 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.89);
+    transition: background 0.5s;
+}
+.paid-btn:hover{
+    background: rgb(90, 89, 89);
+}

@@ -1,0 +1,55 @@
+.login-btn{
+    background-color: tomato;
+    color: #fff;
+    margin-left:132px;
+    border: none;
+   padding:5px 30px 5px 30px;
+   transition: background 0.5s;
+   border-radius: 5px;
+  
+  }
+  .title{
+      color:black;
+  }
+  .title-half{
+      color:tomato;
+  }
+  .login-container{
+    width: 60%;
+  }
+  .login-btn:hover{
+    background: gray;
+  }
+  .a{
+  text-align: center;
+  color: gray;
+  }
+  .login-title{
+    font-weight: bold;
+  }
+  .sign-google{
+    border: 1px solid #80808059;
+    border-radius:  5px;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(22, 22, 184, 0.705);
+  }
+  .google-text{
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  @media only screen and (max-width: 800px){
+      .login-container{
+        width: 0;
+        display: flex;
+        justify-content:center;
+      }
+  }
+  @media only screen and (max-width: 560px){
+      .login-container{
+        width: 0;
+        display: flex;
+        justify-content:center;
+      }
+  }
