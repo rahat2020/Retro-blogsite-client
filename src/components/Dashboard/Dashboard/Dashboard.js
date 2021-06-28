@@ -26,7 +26,7 @@ const Dashboard = () => {
                 <div class="sidebar">
                     <div>
                         <img src={userfour} alt="" className="img-style img-fluid rounded" />
-                        <h6 className="text mt-2">Km Rahat</h6>
+                        <h6 className="text mt-2">user</h6>
 
                     </div>
                     <div className="mt-5 text-sm-start">
