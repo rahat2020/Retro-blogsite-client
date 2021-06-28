@@ -12,8 +12,8 @@ const Blog = () => {
             .then(data => setPost(data))
     }, [])
     return (
-        <div className="container">
-            <h2 className="blog-title text-center mt-5 pt-5 font">Blogs</h2>
+        <section className="container section-container">
+            <h2 className="blog-title text-center font">Blogs</h2>
             <hr />
             <div className="row shadow-sm">
                 {
@@ -38,7 +38,7 @@ const Blog = () => {
                     ))
                 }
             </div>
-        </div>
+        </section>
     );
 };
 

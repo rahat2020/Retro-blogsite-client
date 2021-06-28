@@ -3,8 +3,8 @@ text-decoration: underline;
 text-decoration-color: rgba(187, 187, 187, 0.863);
 text-decoration-style: wavy;
 }
-.container{
-    margin: 40px;
+.subs-container{
+    margin: 20px;
 }
 .input-text{
     width:70%;

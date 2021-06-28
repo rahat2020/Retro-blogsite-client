@@ -5,7 +5,7 @@ import blogTwo from '../../../img/blogTwo.png';
 import blogThree from '../../../img/blogThree.png';
 const HeaderMain = () => {
     return (
-        <div className="container font">
+        <div className="container font div-container">
             <h2 className="header-title font">Trending</h2>
             <hr/>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
