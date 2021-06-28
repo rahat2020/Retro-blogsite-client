@@ -16,6 +16,7 @@
 .card-img:hover{
     transform: scale(1.1);
 }
+
 .card-description{
     font-size: 17px;
     color: rgba(0, 0, 0, 0.877);
@@ -27,7 +28,6 @@
     color: gray;
 }
 .section-container{
-    margin:20px;
 }
 .author-img{
     width:60px;

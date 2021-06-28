@@ -3,17 +3,17 @@ import './PaidBlog.css';
 import paidOne from '../../../img/paidOne.jpeg'
 import { Link } from 'react-router-dom';
 const PaidBlog = () => {
-  
+
     return (
-        <section className="container section-container">
-            <h2 className="paid-header text-center mt-5 pt-5">Paid Blog</h2> <hr/>
+        <section className="container w-100 section-container">
+            <h2 className="paid-header w-100 text-center mt-5 pt-5">Paid Blog</h2> <hr />
             <p className="text-start">Paid Members</p>
-            <div className="row shadow-sm pb-5">
-               
+            <div className="row w-100 shadow-sm pb-5">
+
                 <div className="col-md-6 paid-container">
-                    <div className="card" style={{ width: '23rem' }}>
+                    <div className="card">
                         <div className="paid-title justify-content-around">
-                            <h3 className="paid-title">You’ve gotta <br/> be natural</h3>
+                            <h3 className="paid-title">You’ve gotta <br /> be natural</h3>
                             <img className="paid-img" src={paidOne} alt="" />
                         </div>
                         <p className="paid-head">Hannah Weastell and others — 2 min read</p>
@@ -26,9 +26,9 @@ const PaidBlog = () => {
                     </div>
                 </div>
                 <div className="col-md-6 paid-container">
-                    <div className="card" style={{ width: '23rem' }}>
+                    <div className="card">
                         <div className="paid-title justify-content-around">
-                            <h3 className="paid-title">You’ve gotta <br/> be natural</h3>
+                            <h3 className="paid-title">You’ve gotta <br /> be natural</h3>
                             <img className="paid-img" src={paidOne} alt="" />
                         </div>
                         <p className="paid-head">Hannah Weastell and others — 2 min read</p>
