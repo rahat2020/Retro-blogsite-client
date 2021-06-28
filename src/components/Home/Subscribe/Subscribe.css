@@ -3,12 +3,10 @@ text-decoration: underline;
 text-decoration-color: rgba(187, 187, 187, 0.863);
 text-decoration-style: wavy;
 }
-.subs-container{
-    /* margin: 20px; */
-}
+
 .input-text{
-    /* width:70%;
-    padding: 10px; */
+     width:60%;
+    padding: 10px;
 }
 .btn-subscribe{
     border: none; 
@@ -25,4 +23,12 @@ text-decoration-style: wavy;
     font-weight: bold;
     color: black;
     background: aqua;
+}
+
+@media (max-width:460px) {
+    .subs-container{
+        width: 100%;
+        margin-bottom: 40px;
+        display: block;
+    }
 }

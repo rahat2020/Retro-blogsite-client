@@ -9,11 +9,6 @@ const HeaderMain = () => {
             <h2 className="header-title font">Trending</h2>
             <hr/>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="carousel-inner">
