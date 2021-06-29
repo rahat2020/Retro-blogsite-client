@@ -54,19 +54,19 @@ const Footer = () => {
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 pd-link">
 
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    Products
+                                    Blog list
                                 </h6>
                                 <p>
-                                    <Link to="" className="text-reset pd-link">T-shirt</Link>
+                                    <Link to="" className="text-reset pd-link">Environments</Link>
                                 </p>
                                 <p>
-                                    <Link to="" className="text-reset pd-link">Shoes</Link>
+                                    <Link to="" className="text-reset pd-link">Social Network</Link>
                                 </p>
                                 <p>
-                                    <Link to="" className="text-reset pd-link">Shirts</Link>
+                                    <Link to="" className="text-reset pd-link">Plants</Link>
                                 </p>
                                 <p>
-                                    <Link to="" className="text-reset pd-link">Ladies and Men</Link>
+                                    <Link to="" className="text-reset pd-link">Technology</Link>
                                 </p>
                             </div>
 
@@ -99,7 +99,7 @@ const Footer = () => {
                                 <p><i className="fas fa-home me-3"></i> Dhaka, BariDhara-10012, BD</p>
                                 <p>
                                     <FontAwesomeIcon icon={faEnvelope} className="email" /> {" "}
-                                    ClothStore@example.com
+                                    RetroBlog@example.com
                                 </p>
                                 <p> <FontAwesomeIcon icon={faPhone} className="phone" /> +8801 234 567 89</p>
                                 <p> <FontAwesomeIcon icon={faPhone} className="phone" /> +8801 234 567 88</p>
@@ -109,7 +109,7 @@ const Footer = () => {
                 </section>
                 <div class="text-center p-4 Copyright" style={{ backgroundColor: ' rgba(0, 0, 0, 0.05)' }}>
                     © 2021 Copyright:
-                    <Link class="text-reset fw-bold" to="/home">ClothStore</Link>
+                    <Link class="text-reset fw-bold" to="/home"> pRetroBlog</Link>
                 </div>
 
             </footer>

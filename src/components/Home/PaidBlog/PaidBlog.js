@@ -6,7 +6,7 @@ const PaidBlog = () => {
 
     return (
         <section className="container w-100 section-container">
-            <h2 className="paid-header w-100 text-center mt-5 pt-5">Paid Blog</h2> <hr />
+            <h2 className="paid-header w-100 text-center mt-5 pt-5">Paid Blog</h2>
             <p className="text-start">Paid Members</p>
             <div className="row w-100 shadow-sm pb-5">
 

@@ -13,8 +13,6 @@ const Blog = () => {
     }, [])
     return (
         <section className="container section-container">
-            <h2 className="blog-title w-100 text-center font w-100">Blogs</h2>
-            <hr />
             <div className="row w-100 shadow-sm">
                 {
                     post.map((singlePost) => (

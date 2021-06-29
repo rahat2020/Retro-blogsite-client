@@ -2,12 +2,13 @@ import React, { useContext, useState, useEffect } from 'react';
 import './Dashboard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faPlus, faTasks, faUserShield } from '@fortawesome/free-solid-svg-icons';
-import userfour from '../../../img/userfour.png'
+// import userfour from '../../../img/userfour.png'
 import RouteDiv from '../RouteDiv/RouteDiv';
 import { Link, useRouteMatch } from "react-router-dom";
 import { UserContext } from '../../../App'
 const Dashboard = () => {
-    const loggedInUser = useContext(UserContext)
+    const [loggedInUser] = useContext(UserContext)
+    console.log(loggedInUser)
     const [isAdmin, setAdmin] = useState(false)
     useEffect(() => {
         fetch('http://localhost:5000/ifAdmin', {
@@ -18,15 +19,19 @@ const Dashboard = () => {
             .then(response => response.json())
             .then(data => setAdmin(data))
 
-    }, [ loggedInUser.email])
+    }, [loggedInUser.email])
     let { url } = useRouteMatch();
+
+
     return (
         <section className="row">
             <div className="col-md-4">
                 <div class="sidebar">
                     <div>
-                        <img src={userfour} alt="" className="img-style img-fluid rounded" />
-                        <h6 className="text mt-2">user</h6>
+                        {
+                            loggedInUser.isSignedIn ? <img src={loggedInUser.photo} alt="" className="img-style img-fluid rounded"/> : <h3>here is user img</h3>
+                        }
+                        <h6 className="text mt-2">{loggedInUser.name}</h6>
 
                     </div>
                     <div className="mt-5 text-sm-start">

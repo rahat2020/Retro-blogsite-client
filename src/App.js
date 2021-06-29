@@ -12,7 +12,7 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import { createContext, useState } from 'react';
 export const UserContext = createContext();
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [loggedInUser, setLoggedInUser] = useState({isSignedIn: true});
   return (
     <div className="App">
       <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>

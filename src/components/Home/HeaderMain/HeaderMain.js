@@ -7,7 +7,7 @@ const HeaderMain = () => {
     return (
         <div className="container font div-container">
             <h2 className="header-title font">Trending</h2>
-            <hr/>
+            {/* <hr/> */}
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

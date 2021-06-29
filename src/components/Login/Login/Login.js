@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import './Login.css';
+import { Link } from 'react-router-dom';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../firebase.config';
@@ -14,6 +15,7 @@ if (!firebase.apps.length) {
 }
 const Login = () => {
     const [  loggedInUser ,setLoggedInUser] = useContext(UserContext);
+    console.log(loggedInUser)
     const history = useHistory()
     const location = useLocation()
     let { from } = location.state || { from: { pathname: "/" } };
@@ -40,6 +42,7 @@ const Login = () => {
                 }
                 setUser(signedInUser)
                 setLoggedInUser(signedInUser)
+                // console.log(setLoggedInUser)
                 history.replace(from);
                 console.log(displayName, email, photoURL);
             })
@@ -50,6 +53,7 @@ const Login = () => {
 
             })
     }
+    console.log(setLoggedInUser)
     const handleGoogleSignOut = () => {
         firebase.auth().signOut()
             .then(() => {
@@ -146,13 +150,13 @@ const Login = () => {
         backgroundColor: 'tomato',
         color: 'black'
     }
-
+    
     return (
         <div className="login-container">
 
             <div className="mt-3">
                 <form className="mt-3 border p-4 shadow-sm" style={loginForm} >
-                    <h2 className="title logo text-sm-center">Retro<span className="title-half">Blog</span></h2>
+                  <Link to="/"><h2 className="title logo text-sm-center">Retro<span className="title-half">Blog</span></h2></Link>
 
                     <div className="d-flex justify-content-between align-items-center sign-google p-1 mb-3" onClick={handleGoogleSignIn}>
                         <img style={{ borderRadius: '30%', cursor: 'pointer', width: '50px' }}

@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 const Navbar = () => {
-  const navStyle ={ 
+  const navStyle = {
     color: 'tomato'
   }
-  const home ={ 
+  const home = {
     backgroundColor: '#5d63dc',
-    color:'white',
-    padding:'5px',
-    borderRadius:'5px',
+    color: 'white',
+    padding: '5px',
+    borderRadius: '5px',
   }
-  
+  const [loggedInUser] = useContext(UserContext)
+  console.log(loggedInUser)
   return (
 
     <div class="container" id="home">
@@ -23,11 +25,11 @@ const Navbar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav f-right ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <Link class="nav-link" to="/" style={home}>Home <span class="sr-only">(current)</span></Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" style={navStyle}  to="/features" tabindex="-1">All Blogs</Link>
+              <Link class="nav-link" style={navStyle} to="/features" tabindex="-1">All Blogs</Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" style={navStyle} to="/contact" tabindex="-1">Contact</Link>
@@ -35,8 +37,11 @@ const Navbar = () => {
             <li class="nav-item">
               <Link class="nav-link" style={navStyle} to="/dashboard/addPost" tabindex="-1">Dashboard</Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" style={navStyle} to="/login" tabindex="-1">Login</Link>
+            <li class="nav-item login">
+              {
+                loggedInUser.isSignedIn ?   <Link class="nav-link" style={navStyle} to="/login" tabindex="-1">{loggedInUser.name}</Link> : 
+                <Link class="nav-link" style={navStyle} to="/login" tabindex="-1">Login</Link>
+              }
             </li>
           </ul>
         </div>
