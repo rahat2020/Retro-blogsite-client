@@ -26,7 +26,7 @@ const Navbar = () => {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav f-right ml-auto">
             <li class="nav-item">
-              <Link class="nav-link" to="/" style={home}>Home <span class="sr-only">(current)</span></Link>
+              <Link class="nav-link" to="/" style={navStyle}>Home</Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" style={navStyle} to="/features" tabindex="-1">All Blogs</Link>
@@ -37,10 +37,11 @@ const Navbar = () => {
             <li class="nav-item">
               <Link class="nav-link" style={navStyle} to="/dashboard/addPost" tabindex="-1">Dashboard</Link>
             </li>
-            <li class="nav-item login">
+            <li class="nav-item ">
               {
-                loggedInUser.isSignedIn ?   <Link class="nav-link" style={navStyle} to="/login" tabindex="-1">{loggedInUser.name}</Link> : 
-                <Link class="nav-link" style={navStyle} to="/login" tabindex="-1">Login</Link>
+                loggedInUser.isSignedIn ? 
+                <Link class="nav-link" style={home} to="/login" tabindex="-1">{loggedInUser.name}</Link> : 
+                <Link class="nav-link" style={home} to="/login" tabindex="-1">login</Link>
               }
             </li>
           </ul>

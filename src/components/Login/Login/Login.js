@@ -54,6 +54,7 @@ const Login = () => {
             })
     }
     console.log(setLoggedInUser)
+    
     const handleGoogleSignOut = () => {
         firebase.auth().signOut()
             .then(() => {

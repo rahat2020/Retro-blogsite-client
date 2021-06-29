@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 
 const ManagePost = () => {
     const [deleteItems, setDeleteItems] = useState([])
-    const { _id } = useParams();
+
     // console.log(_id)
     useEffect(() => {
         const url = `http://localhost:5000/showPost`;
