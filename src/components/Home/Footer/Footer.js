@@ -109,7 +109,7 @@ const Footer = () => {
                 </section>
                 <div class="text-center p-4 Copyright" style={{ backgroundColor: ' rgba(0, 0, 0, 0.05)' }}>
                     © 2021 Copyright:
-                    <Link class="text-reset fw-bold" to="/home"> pRetroBlog</Link>
+                    <Link class="text-reset fw-bold" to="/home"> RetroBlog</Link>
                 </div>
 
             </footer>

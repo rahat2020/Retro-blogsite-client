@@ -12,13 +12,13 @@ const Blog = () => {
             .then(data => setPost(data))
     }, [])
     return (
-        <section className="container section-container">
+        <section className="container section-container mt-4">
             <div className="row w-100 shadow-sm">
                 {
                     post.map((singlePost) => (
                         <div className="col-md-4">
                             <div className="card-container w-100 mt-4">
-                                <div class="card w-100 ">
+                                <div class="card w-100 card-style">
                                     <img class="card-img-top card-img" src={singlePost.imgURL} alt="" />
                                     <div class="card-body">
                                         <h6 class="card-title">Business, travel <span className="date">-July 2, 2020</span> </h6>

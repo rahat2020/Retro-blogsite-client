@@ -6,8 +6,8 @@ import blogThree from '../../../img/blogThree.png';
 const HeaderMain = () => {
     return (
         <div className="container font div-container">
-            <h2 className="header-title font">Trending</h2>
-            {/* <hr/> */}
+            <h2 className="header-title font">Trending Topics</h2>
+            <hr/>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -16,12 +16,12 @@ const HeaderMain = () => {
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-7">
                                         <div className="header-data">
-                                            <h2>MEGA LCD TV FOR SPORTS</h2>
-                                            <p>this is the worlds best tv that i've ever made to watch fifa world cup</p>
+                                            <h2>Why build smart house</h2>
+                                            <p>A smart house is a home that has highly advanced,</p>
                                             <button className="btn-header">Read more</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 mt-3">
                                         <img src={blogOne} class=" header-img  img-fluid" alt="..." />
                                     </div>
                                 </div>
@@ -35,12 +35,12 @@ const HeaderMain = () => {
                                 <div class="row  d-flex align-items-center">
                                     <div class="col-md-7 header-data">
                                     <div className="header-data">
-                                            <h2>MEGA LCD TV FOR SPORTS</h2>
-                                            <p>this is the worlds best tv that i've ever made to watch fifa world cup</p>
+                                            <h2>Why are leaves green?</h2>
+                                            <p>The leaves of most plants are green, because...</p>
                                             <button className="btn-header">Read more</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 mt-3">
                                         <img src={blogTwo} class=" header-img img-fluid" alt="..." />
                                     </div>
                                 </div>
@@ -54,12 +54,12 @@ const HeaderMain = () => {
                                 <div class="row  d-flex align-items-center">
                                     <div class="col-md-7 header-data">
                                     <div className="header-data">
-                                            <h2>Your most unhappy customers are <br/>your greatest source of learning.</h2>
-                                            <p>this is the worlds best tv that i've ever made to watch fifa world cup</p>
+                                            <h2>Why you should not eat apples?</h2>
+                                            <p>Apples are acidic and thus too much of it can damage your teeth</p>
                                             <button className="btn-header">Read more</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 mt-3">
                                         <img src={blogThree} class=" header-img img-fluid" alt="..." />
                                     </div>
                                 </div>

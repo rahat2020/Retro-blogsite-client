@@ -1,9 +1,12 @@
 .subscribe-title{
 text-decoration: underline;
-text-decoration-color: rgba(187, 187, 187, 0.863);
+text-decoration-color: rgba(229, 226, 226, 0.938);
 text-decoration-style: wavy;
+transition: text-decoration-color 0.5s;
 }
-
+.subscribe-title:hover{
+    text-decoration-color: aqua;
+}
 .input-text{
      width:60%;
     padding: 10px;
@@ -14,7 +17,7 @@ text-decoration-style: wavy;
     background: black;
     padding:5px 15px 5px 15px;
     color:white;
-    width: 20%;
+    width: 37%;
     font-size: 15px;
     font-weight: bold;
     transition: background 0.5s;

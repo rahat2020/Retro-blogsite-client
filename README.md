@@ -1,4 +1,4 @@
-Hello there welcome to the 'Retro blogs | website'.
+Hello there welcome to the 'Retro blogs | Blog - website'.
 
 In this project I have used React JS as front end and Node JS as my backend and used Mongodb as my database.
 Mainly I wanted to create a blog website like this one https://preview.colorlib.com/#magdesign and tried to make it as simple as possible.

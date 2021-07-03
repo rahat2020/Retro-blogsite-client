@@ -16,6 +16,7 @@ hr{
     width: 131px;
     margin-top: 4px;
     background: red;
+    margin:auto;
 }
 .btn-header{
     border: none;
@@ -26,4 +27,16 @@ hr{
     padding: 6px 15px 6px 15px;
     border-radius: 5px;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .btn-header{
+        width:150px;
+        margin-bottom: 15px;
+    }
+    .header-img{
+        width:100%;
+        border-radius: 20px;
+        height:250px;
+    }
 }

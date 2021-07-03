@@ -2,6 +2,10 @@
 .paid-container{
     border-left: 1px dashed gray;
     border-right: 1px dashed gray;
+    transition:transform 0.5s;
+}
+.paid-container:hover{
+    transform: translateY(10px);
 }
 .text-start{
     background: #00e6cb;

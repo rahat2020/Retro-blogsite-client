@@ -11,8 +11,14 @@
 .card-img{
     height:200px;
     transition: transform 0.5s;
+    
 
-
+}
+.card-style{
+    transition: transform 0.5s;
+}
+.card-style:hover{
+    transform: translateX(10px)
 }
 .card-img:hover{
     transform: scale(1.1);
