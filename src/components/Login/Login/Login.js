@@ -39,6 +39,7 @@ const Login = () => {
                     name: displayName,
                     email: email,
                     photo: photoURL
+                    
                 }
                 setUser(signedInUser)
                 setLoggedInUser(signedInUser)

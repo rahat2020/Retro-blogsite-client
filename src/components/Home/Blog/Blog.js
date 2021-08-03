@@ -6,7 +6,7 @@ import userone from '../../../img/userone.jpg';
 const Blog = () => {
     const [post, setPost] = useState([])
     useEffect(() => {
-        const url = `http://localhost:5000/showPost`
+        const url = `https://mysterious-ridge-73120.herokuapp.com/showPost`
         fetch(url)
             .then(response => response.json())
             .then(data => setPost(data))

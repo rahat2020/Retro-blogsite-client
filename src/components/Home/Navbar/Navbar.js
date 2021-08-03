@@ -14,6 +14,8 @@ const Navbar = () => {
   }
   const [loggedInUser] = useContext(UserContext)
   console.log(loggedInUser)
+  
+
   return (
 
     <div class="container" id="home">
@@ -39,7 +41,7 @@ const Navbar = () => {
             </li>
             <li class="nav-item ">
               {
-                loggedInUser.isSignedIn ? 
+                loggedInUser.email ? 
                 <Link class="nav-link" style={home} to="/login" tabindex="-1">{loggedInUser.name}</Link> : 
                 <Link class="nav-link" style={home} to="/login" tabindex="-1">login</Link>
               }
