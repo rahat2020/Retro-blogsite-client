@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './PaidBlog.css';
 import paidOne from '../../../img/paidOne.jpeg'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const PaidBlog = () => {
-
+    useEffect(() => {
+        AOS.init({ offset: 120, duration: 2000 });
+    })
     return (
         <section className="container w-100 section-container">
-            <h2 className="paid-header w-100 text-center mt-4 pt-4">Paid Blog</h2> 
-            <hr/>
+            <h2 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="paid-header w-100 text-center mt-4 pt-4">Paid Blog</h2>
+            <hr />
             <p className="text-start">Paid Members</p>
-            <div className="row w-100 shadow-sm pb-5">
+            <div data-aos="fade-up" data-aos-duration="3000" className="row w-100 shadow-sm pb-5">
 
                 <div className="col-md-6 paid-container">
                     <div className="card">

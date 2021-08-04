@@ -20,7 +20,7 @@ const Navbar = () => {
 
     <div class="container" id="home">
       <nav class="navbar navbar-expand-lg navbar-light ">
-        <Link class="navbar-brand logo" to="/home">Retro<span className="logo-title">Blog</span></Link>
+        <Link class="navbar-brand logo" to="/">Retro<span className="logo-title">Blog</span></Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,6 +38,9 @@ const Navbar = () => {
             </li>
             <li class="nav-item">
               <Link class="nav-link" style={navStyle} to="/dashboard/addPost" tabindex="-1">Dashboard</Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" style={navStyle} to="/about" tabindex="-1">About Us</Link>
             </li>
             <li class="nav-item ">
               {

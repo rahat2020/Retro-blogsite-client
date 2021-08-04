@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Blog.css';
 import userone from '../../../img/userone.jpg';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Blog = () => {
     const [post, setPost] = useState([])
     useEffect(() => {
@@ -11,9 +12,13 @@ const Blog = () => {
             .then(response => response.json())
             .then(data => setPost(data))
     }, [])
+    
+    useEffect(() => {
+        AOS.init({ offset: 120, duration: 2000});
+    })
     return (
         <section className="container section-container mt-4">
-            <div className="row w-100 shadow-sm">
+            <div data-aos="fade-up-right" className="row w-100 shadow-sm">
                 {
                     post.map((singlePost) => (
                         <div className="col-md-4">

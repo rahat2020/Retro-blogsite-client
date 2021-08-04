@@ -11,6 +11,7 @@ import Login from './components/Login/Login/Login';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import { createContext, useState } from 'react';
 import Contact from './components/Contact/Contact';
+import AboutUs from './components/AboutUs/AboutUs';
 // import Navbar from './components/Home/Navbar/Navbar';
 export const UserContext = createContext();
 function App() {
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/about">
+              <AboutUs/>
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard />

@@ -1,24 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Contact.css';
-import Navbar from '../Home/Navbar/Navbar';
+// import Navbar from '../Home/Navbar/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane, faMapMarkedAlt, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faYoutube, faTwitter, } from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const Contact = () => {
-
+    useEffect(() => {
+        AOS.init({ offset: 120, duration: 2000});
+    })
     return (
         <section className="" id="contact">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <Link class="navbar-brand logo" to="/home">Retro<span className="logo-title">Blog</span></Link>
+                    <Link class="navbar-brand logo" to="/">Retro<span className="logo-title">Blog</span></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav text-decoration-none ">
                             <Link class="nav-link text-white fw-bold nav-hover" aria-current="page" to="/">Home</Link>
-                            <Link class="nav-link text-white fw-bold nav-hover" to="/login">Features</Link>
+                            <Link class="nav-link text-white fw-bold nav-hover" to="/login">Login</Link>
                             <Link class="nav-link text-white fw-bold nav-hover" to="/dashboard">Dashboard</Link>
                             <Link class="nav-link text-white fw-bold nav-hover" to="/blog" tabindex="-1" >Blog</Link>
                         </div>
@@ -26,11 +30,11 @@ const Contact = () => {
                 </div>
             </nav>
             <div id="contact">
-                <h1 class="section-header">Contact</h1>
+                <h1 data-aos="fade-right" class="section-header">Contact</h1>
 
                 <div class="contact-wrapper">
                     {/* message form */}
-                    <form id="contact-form" class="form-horizontal" role="form">
+                    <form data-aos="fade-left" id="contact-form" class="form-horizontal" role="form">
 
                         <div class="form-group">
                             <div class="col-sm-12">
@@ -59,7 +63,7 @@ const Contact = () => {
                     </form>
 
                     {/* social icon and adderess */}
-                    <div class="direct-contact-container">
+                    <div data-aos="fade-right" class="direct-contact-container">
 
                         <ul class="contact-list">
                             <li class="list-item"> <FontAwesomeIcon className="icon" icon={faMapMarkedAlt} /> <span class="contact-text place">Dhaka, Bangladesh</span></li>

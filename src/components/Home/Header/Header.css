@@ -1,7 +1,6 @@
 .Header-container{
-    background: pink;
+    background: #f1ea4785;
     height:100vh;
     background-position:center;
-    /* margin-top: -40px; */
     background-size: cover;
 }

@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './HeaderMain.css';
 import blogOne from '../../../img/blogOne.png';
 import blogTwo from '../../../img/blogTwo.png';
 import blogThree from '../../../img/blogThree.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 const HeaderMain = () => {
+    useEffect(() => {
+        AOS.init({ offset: 120, duration: 2000});
+    })
     return (
-        <div className="container font div-container">
+        <div data-aos="fade-right" className="container font div-container">
             <h2 className="header-title font">Trending Topics</h2>
             <hr/>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
