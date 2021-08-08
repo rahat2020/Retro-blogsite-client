@@ -33,7 +33,7 @@ const Blog = () => {
                                             <img className="author-img" src={userone} alt="" />
                                             <p className="author-name">Jhons snow <br /> <span className="author-passion">CEO and Founder</span> </p>
                                         </div>
-                                        <Link to="" > <button className="btn-readmore">Read More</button> </Link>
+                                        <Link to={`/BlogDetails/${singlePost._id}`} > <button className="btn-readmore">Read More</button> </Link>
                                     </div>
                                 </div>
                             </div>

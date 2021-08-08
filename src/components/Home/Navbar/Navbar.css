@@ -2,12 +2,12 @@
     color: tomato;
 }
 .nav-style{
-    color: tomato;
+    color: rgba(255, 99, 71, 0.774);
 }
 .login{
     background: white;
     border-radius: 5px;
-
-
-
+}
+.nav-item{
+    font-weight: bold;
 }

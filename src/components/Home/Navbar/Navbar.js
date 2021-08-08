@@ -26,7 +26,7 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav f-right ml-auto">
+          <ul class="navbar-nav f-right ml-auto nav-item">
             <li class="nav-item">
               <Link class="nav-link" to="/" style={navStyle}>Home</Link>
             </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link class="nav-link" style={navStyle} to="/dashboard/addPost" tabindex="-1">Dashboard</Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" style={navStyle} to="/about" tabindex="-1">About Us</Link>
+              <Link class="nav-link " style={navStyle} to="/about" tabindex="-1">About Us</Link>
             </li>
             <li class="nav-item ">
               {
