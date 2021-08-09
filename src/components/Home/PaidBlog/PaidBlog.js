@@ -12,7 +12,7 @@ const PaidBlog = () => {
         <section className="container w-100 section-container">
             <h2 data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" className="paid-header w-100 text-center mt-4 pt-4">Paid Blog</h2>
+     data-aos-easing="flip-down" className="paid-header w-100 text-center mt-4 pt-4">Paid Blog</h2>
             <hr />
             <p className="text-start">Paid Members</p>
             <div data-aos="fade-up" data-aos-duration="3000" className="row w-100 shadow-sm pb-5">

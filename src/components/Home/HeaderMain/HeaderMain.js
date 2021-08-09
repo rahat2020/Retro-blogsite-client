@@ -10,7 +10,7 @@ const HeaderMain = () => {
         AOS.init({ offset: 120, duration: 2000});
     })
     return (
-        <div data-aos="fade-right" className="container font div-container">
+        <div data-aos="fade-down" className="container font div-container">
             <h2 className="header-title font">Trending Topics</h2>
             <hr/>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">

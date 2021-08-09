@@ -7,7 +7,7 @@ const Subscribe = () => {
         AOS.init({ offset: 120, duration: 2000});
     })
     return (
-        <section data-aos="fade-left" className="container w-100 h-auto mt-5 mb-5 subs-container">
+        <section data-aos="fade-up" className="container w-100 h-auto mt-5 mb-5 subs-container">
            <div className="">
            <h2 className="text-sm-start subscribe-title">Subscribe to newsletter</h2>
             <div className="subscribe d-flex justify-content-between mt-4" > 

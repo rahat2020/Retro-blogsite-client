@@ -18,7 +18,7 @@ const Blog = () => {
     })
     return (
         <section className="container section-container mt-4">
-            <div data-aos="fade-up-right" className="row w-100 shadow-sm">
+            <div data-aos="fade-down" className="row w-100 shadow-sm">
                 {
                     post.map((singlePost) => (
                         <div className="col-md-4">

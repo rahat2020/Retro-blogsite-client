@@ -16,7 +16,7 @@ const BlogDetails = () => {
     console.log(_id)
 
     useEffect(() => {
-        const url = `http://localhost:5000/readBlog`
+        const url = `https://mysterious-ridge-73120.herokuapp.com/readBlog`
         fetch(url)
         .then(res=> res.json())
         .then(data=> setBlog(data))
@@ -83,11 +83,11 @@ const BlogDetails = () => {
                                         <div class="footer-social-info">
                                             Share:
                                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <Link href="#" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                            <Link to="https://www.facebook.com/KaziRahat1020/" data-toggle="tooltip" data-placement="top" title="Facebook">
                                                 <FontAwesomeIcon icon={faFacebookSquare} />
                                             </Link>
 
-                                            <Link to="" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                            <Link to="https://www.instagram.com/kazirahat1020/" data-toggle="tooltip" data-placement="top" title="Instagram">
                                                 <FontAwesomeIcon icon={faInstagram} />
                                             </Link>
                                             <Link to="" data-toggle="tooltip" data-placement="top" title="Twitter">
@@ -98,7 +98,7 @@ const BlogDetails = () => {
                                                 <FontAwesomeIcon icon={faWhatsapp} />
                                             </Link>
 
-                                            <Link to="" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                            <Link to="https://www.linkedin.com/in/kazi-rahat2020/" data-toggle="tooltip" data-placement="top" title="Linkedin">
                                                 <FontAwesomeIcon icon={faLinkedin} />
                                             </Link>
 
